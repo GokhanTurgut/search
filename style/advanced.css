@@ -1,0 +1,165 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: arial,sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 1.5rem 1rem 3rem 1rem;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.links > a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-family: 'Roboto',Arial,sans-serif;
+  font-size: .9rem;
+}
+
+.links > a:visited {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.links > a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#advancedSearch {
+  color: #d93025;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-bottom: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+#findPages {
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: .85rem;
+}
+
+.inputBar {
+  width: 28rem;
+  border: 1px solid #d9d9d9;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+
+.inputBar:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+#searchButton {
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  height: 30px;
+  min-width: 120px;
+  padding: 0 12px;
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  color: white;
+}
+
+#searchButton:hover {
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+}
+
+@media only screen and (max-width: 690px) {
+  .property {
+    width: 25rem;
+  }
+  .inputBar {
+    width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .property {
+    width: 15rem;
+  }
+  .inputBar {
+    width: 7rem;
+  }
+}
+/*# sourceMappingURL=advanced.css.map */

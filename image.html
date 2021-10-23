@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Images</title>
+    <link rel="stylesheet" href="style/image.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="links">
       <a href="/">Google Search</a>
       <a href="advanced.html">Advanced Search</a>
     </div>
-    <div class="logo">
-      <img src="googlelogo.png" alt="Google Logo" />
-    </div>
     <div class="search">
+      <div class="logo">
+        <img src="googlelogo.png" alt="Google Logo" />
+        <p id="logoImages">images</p>
+      </div>
       <form action="https://google.com/search">
-        <input type="hidden" name="tbm" value="isch" />
-        <input type="text" name="q" />
-        <input type="submit" value="Google Search" />
+        <div class="searchBar">
+          <input type="hidden" name="tbm" value="isch" />
+          <span class="material-icons">search</span>
+          <input
+            id="searchInput"
+            type="text"
+            name="q"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            autofocus=""
+            spellcheck="false"
+          />
+          <span class="material-icons">photo_camera</span>
+          <span class="material-icons">mic</span>
+          <button type="submit" class="material-icons" id="searchButton">
+            search
+          </button>
+        </div>
       </form>
     </div>
   </body>

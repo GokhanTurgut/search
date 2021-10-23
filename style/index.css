@@ -12,7 +12,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 50vh;
+  min-height: 55vh;
 }
 
 .links {
@@ -25,6 +25,7 @@ body {
   width: 100%;
   margin-top: 1rem;
   margin-right: 1rem;
+  margin-bottom: 3rem;
 }
 
 .links > a {
@@ -89,6 +90,7 @@ body {
   height: 44px;
   border-radius: 24px;
   margin: auto;
+  margin: 1rem 0;
 }
 
 .searchBar:hover {
@@ -124,7 +126,7 @@ body {
   color: #3c4043;
   font-family: arial,sans-serif;
   font-size: 14px;
-  margin: 20px 5px;
+  margin: 14px 5px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -141,4 +143,10 @@ body {
   border: 1px solid #dadce0;
   color: #202124;
 }
-/*# sourceMappingURL=main.css.map */
+
+@media only screen and (max-width: 650px) {
+  .searchBar {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
